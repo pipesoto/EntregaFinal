@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.navegador{
+
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px; 
+}
+.navegador ul li:hover{
+    background: #6a6268;
+}
+.navegador img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;   
+
+}
+.navegador ul li{
+    display: inline-block;
+}
+.navegador ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    
+}
+.encabezado{
+    background-image:url(../multimedia/img/banner.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover ;
+    margin-top: 30px;
+}
+.encabezado p{
+    font-size: 30px;
+    color: black;
+    padding-top: 250px;
+    padding-left: 5%;
+    
+}
+.encabezado h1{
+
+    font-size: 100px;
+    color: rgb(11, 36, 138);
+    padding-left: 70px;
+    
+}
+.encabezado h6{
+    font-size: 40px;
+    color: black;
+    padding-left: 300px;
+}
+.encabezado-banner button{
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 40px;
+    margin-left: 350px;
+    padding: 10px;
+      
+}
+.encabezado-banner a{
+text-decoration: none;
+color: white;
+}
+.encabezado-banner button:hover{
+
+    background: #6a6268;
+}
+.presentaciones{
+   
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+    
+}
+.presentacion-tarjeta{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-image: url(../multimedia/img/tarjeta.png); 
+    width: 450px;
+    border-radius: 7px;
+  
+}
+
+.presentacion-tarjeta i{
+   display: flex;
+   justify-content:left;
+   text-align:center;
+   color: black ;
+   padding-top: 5px;
+}
+.presentacion-calidad h3{
+        font-size: 20px;
+        padding-top: 10px;
+        text-align: center;
+           
+}
+.presentacion-calidad p{
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify; 
+    
+}
+.historia{
+    margin-top: 40px;
+}
+.historia p {
+   padding-top: 20px;
+   padding-left: 5px; 
+}
+.quienes-somos h1{
+    padding: 10px;
+}
+.quienes-somos h4{
+    padding: 10px;
+}
+.frase1{
+      margin-left: 5px;
+}
+.fin-historia{
+   padding-top: 10px;
+   margin-left: 10px;
+}
+.foto1{
+    
+    max-width: 48%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: inline-block;
+    margin: auto;
+    background-size: cover ;
+}
+.frase2{
+    display: inline;
+    max-width: 48%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: inline-block;
+    margin:auto;
+    text-align: justify;
+
+}
+.equipo-encabezado{
+    text-align: center;
+    padding-top: 20px;
+}
+.teams{
+    text-align: center;
+    padding: 20px;
+}
+.team-ventas{
+    max-width: 33%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: inline-block;
+    margin: auto;
+    background-size: cover ;
+}
+.team-coder{
+    max-width: 33%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: inline-block;
+    margin: auto;
+    background-size: cover ;
+}
+.team-soporte{
+    max-width: 33%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: inline-block;
+    margin: auto;
+    background-size: cover ;
+}
+.servicios{
+    margin-top: 50px;
+}
+.servicios h1{
+    padding: 10px;
+
+}
+.servicios h4{
+    padding: 10px;
+
+}
+.servicios p{
+    padding: 10px;
+
+}
+.fin-servicios{
+    
+        padding: 10px;
+    
+    
+}
+.tarjetas-servicios{
+   
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+      
+}
+.servicio{
+      border: 2px solid black;
+      margin: 10px;
+      padding: 10px;
+      background-image: url(../multimedia/img/tarjeta.png); 
+      width: 450px;
+      border-radius: 7px; 
+  
+}
+.comienzo-formulario{
+    background-color: rgb(25, 43, 59);
+    width: 58%;
+    margin: 0px auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid gray;
+    color: aliceblue;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px gray;
+}
+.comienzo-formulario h3{
+    margin: 0%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.formulario{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.boton-contacto{
+    width: 320px;
+    height: 40px;
+    border: none;
+    padding: 10px 25px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 180px;
+    padding-bottom: 30px;
+  
+}
+.full-contenido{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 50px;
+}
+.intro-tarjetas h2{
+    font-size: 30px;
+    color: black;
+    padding-top: 100px;
+    padding-left:10px;
+}
+.intro-tarjetas h2 strong{
+   
+    color: rgb(180, 190, 50);
+   
+}
+.testimonios{
+   
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+      
+ }
+.testimonio{
+      border: 2px solid black;
+      margin: 10px;
+      padding: 10px;
+      width: 450px;
+      border-radius: 7px;
+    
+}
+.titulo-testimonios{
+    font-size: 26px;
+    padding: 10px;
+}
+.titulo-planes{
+    text-align: center;
+    padding-top:25px;
+}
+.planes-sms{
+   
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+      
+}
+.plan{
+      border: 2px solid black;
+      margin: 10px;
+      padding: 10px;
+     color: rgb(45, 150, 231);
+      width: 400px;
+      border-radius: 7px;
+      height: 500px;
+    
+}
+.planes-mail{
+   
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+      
+}
+.planes-bot{
+   
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+      
+}
+.plan button a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+}
+.planl-fin{
+    text-align: center;
+}
+.plan h2{
+    padding-top: 40px;
+    text-align: center;
+}
+.plan h4{
+    padding-top: 40px;
+    text-align: center;
+    color: rgb(181, 69, 88);
+}
+.plan h3{
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 30px;
+
+}
+.plan button{
+    
+    background-color:rgb(45, 150, 231);
+    border: 0;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.planes{
+    margin-top: 50px;
+    padding: 10px;
+}
+.cajas{
+    display: flex;
+    margin: 5px 8px;
+}
+.cajas label{
+    flex-basis: 80px;
+}
+.cajas input{
+    flex:1;
+}.contactanos{
+    padding-top: 100px;
+    padding-right: 40px;
+}
+.inicio-contacto{
+    margin-top: 50px;
+    padding: 10px;
+}
+.pie-pagina{
+    background-color: black;
+    height: 150px;
+    text-align: center;
+}
+.redes-sociales{
+    color: white;
+    padding-top: 30px;
+}
+.redes-sociales a{
+    padding-right: 30px;
+   
+}
+.logo-facebook{
+    color: blue;
+}
+.logo-linkedin{
+    color: cornflowerblue;
+}
+.logo-whatsapp{
+    color: green;
+}
+.copy{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
