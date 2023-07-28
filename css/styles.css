@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
 .navegador{
 
     background-color: black;
@@ -13,7 +14,7 @@
     top: 0px;
     display: flex;
     justify-content: space-between;
-    height: 60px; 
+    height: 60px;
 }
 .navegador ul li:hover{
     background: #6a6268;
@@ -21,7 +22,7 @@
 .navegador img{
     width: 60px;
     height: 60px;
-    object-fit: cover;   
+    object-fit: cover;
 
 }
 .navegador ul li{
@@ -33,8 +34,9 @@
     color: white;
     display: block;
     padding: 5px 10px;
-    
+
 }
+
 .encabezado{
     background-image:url(../multimedia/img/banner.png);
     width: 100%;
@@ -47,14 +49,14 @@
     color: black;
     padding-top: 250px;
     padding-left: 5%;
-    
+
 }
 .encabezado h1{
 
     font-size: 100px;
     color: rgb(11, 36, 138);
     padding-left: 70px;
-    
+
 }
 .encabezado h6{
     font-size: 40px;
@@ -69,7 +71,7 @@
     font-size: 40px;
     margin-left: 350px;
     padding: 10px;
-      
+
 }
 .encabezado-banner a{
 text-decoration: none;
@@ -79,22 +81,27 @@ color: white;
 
     background: #6a6268;
 }
+@media(max-width:1400px){
+    
+}
 .presentaciones{
-   
+
   display: flex;
   padding-top: 30px;
   justify-content: space-around;
   flex-wrap: wrap;
-    
+  height: 800px;
+
 }
 .presentacion-tarjeta{
     border: 2px solid black;
     margin: 10px;
     padding: 10px;
-    background-image: url(../multimedia/img/tarjeta.png); 
-    width: 450px;
+    background-image: url(../multimedia/img/tarjeta.png);
+    width: 350px;
+    height: 340px;
     border-radius: 7px;
-  
+
 }
 
 .presentacion-tarjeta i{
@@ -108,20 +115,20 @@ color: white;
         font-size: 20px;
         padding-top: 10px;
         text-align: center;
-           
+
 }
 .presentacion-calidad p{
     font-size: 20px;
     padding: 10px;
-    text-align: justify; 
-    
+    text-align: justify;
+
 }
 .historia{
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .historia p {
    padding-top: 20px;
-   padding-left: 5px; 
+   padding-left: 5px;
 }
 .quienes-somos h1{
     padding: 10px;
@@ -129,6 +136,77 @@ color: white;
 .quienes-somos h4{
     padding: 10px;
 }
+.grid-padre{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,150px);
+    margin: 10px;
+    gap: 10px;
+    grid-template-areas: "img1 img1  img2    img2"
+                         "img3 img10 img10   img4"
+                         "img8 img10 img10   img4"
+                         "img8 img6  img6    img9";
+                         /* "img7 img7 img9 img9"
+                         "img8 img8 img9 img9"; */ 
+}
+.img1{
+    grid-area: img1;
+    object-fit: cover;
+}
+.img2{
+    grid-area: img2;
+    object-fit: cover;
+}
+.img3{
+    grid-area: img3;
+    object-fit: cover;
+}
+.img4{
+    grid-area: img4;
+
+}
+.img5{
+    grid-area: img5;
+    object-fit: cover;
+}
+.img6{
+    grid-area: img6;
+    object-fit: cover;
+}
+.img7{
+    grid-area: img7;
+    object-fit: cover;
+}
+
+.img8{
+    grid-area: img8;
+    object-fit: cover;
+}
+.img9{
+    grid-area: img9;
+    object-fit: cover;
+}
+.img10{
+    grid-area: img10;
+    background-color: aliceblue;
+    object-fit: cover;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.grid-padre img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.comillas{
+    font-size: 20px;
+}
+
 .frase1{
       margin-left: 5px;
 }
@@ -137,7 +215,7 @@ color: white;
    margin-left: 10px;
 }
 .foto1{
-    
+
     max-width: 48%;
     height: auto;
     margin: 20px;
@@ -208,27 +286,27 @@ color: white;
 
 }
 .fin-servicios{
-    
+
         padding: 10px;
-    
-    
+
+
 }
 .tarjetas-servicios{
-   
+
     display: flex;
     padding-top: 30px;
     justify-content: space-around;
     flex-wrap: wrap;
-      
+
 }
 .servicio{
       border: 2px solid black;
       margin: 10px;
       padding: 10px;
-      background-image: url(../multimedia/img/tarjeta.png); 
+      background-image: url(../multimedia/img/tarjeta.png);
       width: 450px;
-      border-radius: 7px; 
-  
+      border-radius: 7px;
+
 }
 .comienzo-formulario{
     background-color: rgb(25, 43, 59);
@@ -250,7 +328,7 @@ color: white;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    
+
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -266,7 +344,7 @@ color: white;
     cursor: pointer;
     margin-left: 180px;
     padding-bottom: 30px;
-  
+
 }
 .full-contenido{
     display: flex;
@@ -280,17 +358,17 @@ color: white;
     padding-left:10px;
 }
 .intro-tarjetas h2 strong{
-   
+
     color: rgb(180, 190, 50);
-   
+
 }
 .testimonios{
-   
+
     display: flex;
     padding-top: 30px;
     justify-content: space-around;
     flex-wrap: wrap;
-      
+
  }
 .testimonio{
       border: 2px solid black;
@@ -298,7 +376,7 @@ color: white;
       padding: 10px;
       width: 450px;
       border-radius: 7px;
-    
+
 }
 .titulo-testimonios{
     font-size: 26px;
@@ -309,12 +387,12 @@ color: white;
     padding-top:25px;
 }
 .planes-sms{
-   
+
     display: flex;
     padding-top: 30px;
     justify-content: space-around;
     flex-wrap: wrap;
-      
+
 }
 .plan{
       border: 2px solid black;
@@ -324,23 +402,23 @@ color: white;
       width: 400px;
       border-radius: 7px;
       height: 500px;
-    
+
 }
 .planes-mail{
-   
+
     display: flex;
     padding-top: 30px;
     justify-content: space-around;
     flex-wrap: wrap;
-      
+
 }
 .planes-bot{
-   
+
     display: flex;
     padding-top: 30px;
     justify-content: space-around;
     flex-wrap: wrap;
-      
+
 }
 .plan button a{
     text-align: center;
@@ -367,7 +445,7 @@ color: white;
 
 }
 .plan button{
-    
+
     background-color:rgb(45, 150, 231);
     border: 0;
     border-radius: 20px;
@@ -399,16 +477,54 @@ color: white;
 }
 .pie-pagina{
     background-color: black;
-    height: 150px;
-    text-align: center;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
 }
+
 .redes-sociales{
-    color: white;
-    padding-top: 30px;
+
+    padding-top: 15px;
+    display: block;
+    display: flex;
+    justify-content:center;
+    width: 300px;
+}
+.logo-pie{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    width: 300px;
+
 }
 .redes-sociales a{
-    padding-right: 30px;
-   
+    padding-right: 20px;
+
+}
+
+.menu-pie{
+font-size: 13px;
+width: 400px;
+padding: 30px;
+
+
+}
+.menu-pie ul li a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+
+
+}
+.menu-pie ul li{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+
+
 }
 .logo-facebook{
     color: blue;
@@ -423,4 +539,26 @@ color: white;
     color: white;
     text-align: center;
     padding-top: 20px;
+
+    ;
+}
+.whatsapp{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+.whatsapp i{
+    font-size: 64px;
+    color: white;
 }
