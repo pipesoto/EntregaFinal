@@ -81,9 +81,7 @@ color: white;
 
     background: #6a6268;
 }
-@media(max-width:1400px){
-    
-}
+
 .presentaciones{
 
   display: flex;
@@ -123,6 +121,7 @@ color: white;
     text-align: justify;
 
 }
+
 .historia{
     margin-top: 60px;
 }
@@ -243,30 +242,38 @@ color: white;
     text-align: center;
     padding: 20px;
 }
+@media(max-widht:966){
+    .team{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}
 .team-ventas{
-    max-width: 33%;
+    max-width: auto;
     height: auto;
     margin: 20px;
     padding: 5px;
-    display: inline-block;
+    
     margin: auto;
     background-size: cover ;
 }
 .team-coder{
-    max-width: 33%;
+    max-width: auto;
     height: auto;
     margin: 20px;
     padding: 5px;
-    display: inline-block;
+    
     margin: auto;
     background-size: cover ;
 }
 .team-soporte{
-    max-width: 33%;
+    max-width: auto;
     height: auto;
     margin: 20px;
     padding: 5px;
-    display: inline-block;
+   
     margin: auto;
     background-size: cover ;
 }
@@ -352,7 +359,7 @@ color: white;
     margin-bottom: 50px;
 }
 .intro-tarjetas h2{
-    font-size: 30px;
+    font-size: 40px;
     color: black;
     padding-top: 100px;
     padding-left:10px;
@@ -479,8 +486,39 @@ color: white;
     background-color: black;
     height: 100px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+@media(max-width:992px){
+    .pie-pagina{
+        grid-template-columns: 1fr 1fr;
+
+        }
+        .pie-pagina .menu-pie{
+            grid-column: 1/3;
+            width: 100%;
+            background-color: #000000;
+        }
+}
+@media(max-width:520px){
+    .pie-pagina{
+        grid-template-columns: 1fr;
+
+        }
+       .pie-pagina .menu-pie{
+        grid-template-columns: 1fr;
+
+            width: 100%;
+            background-color: #000000;
+        }
+       .pie-pagina .logo-pie{
+        grid-template-columns: 1fr;
+
+           
+            justify-content: center;
+         
+        }
 }
 
 .redes-sociales{
@@ -490,6 +528,7 @@ color: white;
     display: flex;
     justify-content:center;
     width: 300px;
+  
 }
 .logo-pie{
 
@@ -500,7 +539,7 @@ color: white;
 
 }
 .redes-sociales a{
-    padding-right: 20px;
+    padding-right: 0px;
 
 }
 
@@ -508,6 +547,7 @@ color: white;
 font-size: 13px;
 width: 400px;
 padding: 30px;
+
 
 
 }
@@ -561,4 +601,21 @@ padding: 30px;
 .whatsapp i{
     font-size: 64px;
     color: white;
+}
+@media(max-width:1400){}
+    
+@media(max-|width:1200){
+    
+}
+@media(max-width:992){
+   
+  
+} 
+
+
+@media(max-width:768){
+ 
+}
+@media(max-width:576){
+   
 }
