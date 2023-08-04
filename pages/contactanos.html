@@ -7,20 +7,11 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Contactanos</title>
 </head>
 <body>
-    <!-- <nav class="navegador">
-        <a href="../index.html"><img class="logo" src="../multimedia/img/ZET.png" alt="logoWeb"></a>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="equipo.html">Equipo</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="planes.html">Planes</a></li>
-            <li><a href="contactanos.html">Contáctanos</a></li>
-        </ul>
-    </nav> -->
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -50,7 +41,8 @@
         
     </header>
        
-    <main>
+    <!-- <main> -->
+      <!--
         <section class="full-contenido">
         <div class="comienzo-formulario">
             <h3>Contáctanos</h3>
@@ -83,21 +75,106 @@
     <div class="mapouter"><div class="gmap_canvas"><iframe width="535" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=andres+fuenzalida+1540&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://timenowin.net/">online clock</a><br><style>.mapouter{position: relative;text-align: right;height: 309px;width: 535px;}</style><a href="https://www.embedmaps.co">embed google maps api</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 340px;width: 535px;}</style></div></div>  
 </div>
 </section>
-    </main>
-    <!-- <footer class="pie-pagina">
-        <div class="redes-sociales">
-            <a class="logo-facebook"><i class="fa-brands fa-facebook fa-3x p-2"></i></a>
-            <a class="logo-linkedin"><i class="fa-brands fa-linkedin fa-3x p-2"></i></a>
-            <a class="logo-whatsapp" href=""><i class="fa-brands fa-whatsapp fa-3x p-2"></i></a>
-        </div>
-        <div class="copy">
-            <p>Copyright <i class="fa-solid fa-copyright"></i> Zet 2023</p>
-        </div>
-        
+-->
 
-    </footer> -->
+<!-- <section class="full-contenido">
+  
+    <div class="contenido_form">
+      <div class="contact_form">
+        <h3>Contactanos</h3>
+        <form action="">
+          <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+          </p>
+          <p>
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo">
+          </p>
+          <p>
+            <label for="telefono">telefono</label>
+            <input type="tel" name="telefono" id="telefono">
+          </p>
+          <p>
+            <label for="ciudad">Cuidad</label>
+            <input type="text" name="ciudad" id="ciudad">
+          </p>
+          <p class="block">
+            <label  for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" rows="5"></textarea>
+          </p>
+          <p class="block">
+            <button  type="submit">Enviar</button>
+          </p>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h4>Lorem ipsum dolor sit.</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt">magdalena #9797</i></li>
+          <li><i class="fas fa-phone">magdalena #9797</i></li>
+          <li><i class="fas fa-envelope-opne-text">magdalena #9797</i></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque blanditiis impedit ratione debitis, asperiores at?</p>
+        <p>Compañia.com</p>
+
+      </div>
+    </div>
+</section>
+    </main> -->
+<section class="cuerpo-contacto">
+    <div class="content">
+
+      <h1 class="logo">Envianos tu Consulta</h1>
+
+      <div class="contact-wrapper animated bounceInUp">
+          <div class="contact-form">
+              <h3>Formulario</h3>
+              <form action="">
+                  <p>
+                      <label>Nombre Completo</label>
+                      <input type="text" name="fullname">
+                  </p>
+                  <p>
+                      <label>Direccion de correo</label>
+                      <input type="email" name="email">
+                  </p>
+                  <p>
+                      <label>Télefono celular</label>
+                      <input type="tel" name="phone">
+                  </p>
+                  <p>
+                      <label>Dirección</label>
+                      <input type="text" name="affair">
+                  </p>
+                  <p class="block">
+                     <label>Mensaje</label> 
+                      <textarea name="message" rows="3"></textarea>
+                  </p>
+                  <p class="block">
+                      <button>
+                          Enviar
+                      </button>
+                  </p>
+              </form>
+          </div>
+          <div class="contact-info">
+              <h4>Más información</h4>
+              <ul>
+                  <li><i class="fas fa-map-marker-alt"></i> Andres de Fuenzalida #2345, Las Condes</li>
+                  <li><i class="fas fa-phone"></i> (+2) 2 31 34 345</li>
+                  <li><i class="fas fa-envelope-open-text"></i> contact@zet.com</li>
+              </ul>
+              <p>Nuestras dependencias ubicadas estrategicamnete en varias comunas de la region Metropilitana, estan disponibles para que puedas visitarlas sin problemasy cuando quieras.</p>
+              <p>ZeThechnology.com</p>
+          </div>
+      </div>
+
+  </div>
+</section>
     <!-- comienzo pie de pagina -->
-  <footer class="pie-pagina">
+<footer class="pie-pagina">
+  <div class="grupo1">
     <div class="redes-sociales">
       <a href="www.facebook.com" target="_blank" class="logo-facebook"><i
           class="fa-brands fa-facebook fa-2x p-2"></i></a>
@@ -112,20 +189,27 @@
       </a>
     </div>
     <div class="menu-pie">
-      <ul class="">
-        <li><a class="" aria-current="page" href="../index.html">Inicio |</a></li>
-        <li><a class="" aria-current="page" href="equipo.html">Equipo |</a></li>
-        <li><a class="" aria-current="page" href="servicios.html">Servicios |</a></li>
-        <li><a class="" aria-current="page" href="planes.html">Planes |</a></li>
-        <li><a class="" aria-current="page" href="contactanos.html">Contáctanos</a></li>
-      </ul>
+      
+        <a class="" aria-current="page" href="../index.html">Inicio</a>
+        <a class="" aria-current="page" href="equipo.html">Equipo</a>
+        <a class="" aria-current="page" href="servicios.html">Servicios</a>
+        <a class="" aria-current="page" href="planes.html">Planes</a></li>
+        <a class="" aria-current="page" href="contactanos.html">Contáctanos</a>
+      
     </div>
-    </div>
+  </div>
+
+  <div class="grupo2">
+    <small>&copy; 2023 <b>Zet</b> Todos los derechos reservados</small>
+  </div>
+ 
   </footer>
   <!-- fin pie pagina -->
   <!-- comienzo icono whatsapp flotante -->
+
+
   <div class="whatsapp">
-    <a href="https://walink.co/2edcdf" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="https://walink.co/2edcdf" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
   </div>
   <!-- fin icono whatsapp flotante -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
