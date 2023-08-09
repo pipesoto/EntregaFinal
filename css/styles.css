@@ -65,6 +65,16 @@
   color: #3498db;
 }
 
+@media screen and (max-width: 1100px) {
+  .contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    text-align: center;
+    width: 400px;
+    height: 1700px;
+  }
+}
 .historia {
   margin-top: 60px;
 }
@@ -199,7 +209,8 @@
   transition: all 0.3s ease;
 }
 
-.card-encabezado:after, .card-encabezado::before {
+.card-encabezado:after,
+.card-encabezado::before {
   content: "";
   position: absolute;
   opacity: 0.7;
@@ -353,20 +364,11 @@ span {
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
+    width: 350px;
   }
   .equipo-encabezado {
     text-align: center;
     padding-top: 20px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .contenedor-tarjetas {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    text-align: center;
-    width: 400px;
-    height: 1700px;
   }
 }
 .servicios {
@@ -468,67 +470,6 @@ span {
   padding: 10px;
 }
 
-.comienzo-formulario {
-  background-color: rgb(25, 43, 59);
-  width: 64%;
-  height: 340px;
-  margin: 0px auto;
-  margin-top: 100px;
-  padding: 20px;
-  border: 1px solid gray;
-  color: aliceblue;
-  border-radius: 8px;
-  box-shadow: 0px 0px 8px gray;
-}
-
-.comienzo-formulario h3 {
-  margin: 0%;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.formulario {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.boton-contacto {
-  width: 320px;
-  height: 40px;
-  border: none;
-  padding: 10px 25px;
-  background-color: blue;
-  color: white;
-  border-radius: 20px;
-  cursor: pointer;
-  margin-left: 180px;
-  padding-bottom: 30px;
-}
-
-.testimonios {
-  display: flex;
-  padding-top: 30px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.testimonio {
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px;
-  width: 450px;
-  border-radius: 7px;
-}
-
-.titulo-testimonios {
-  font-size: 26px;
-  padding: 10px;
-}
-
 .planes {
   margin-top: 70px;
   padding: 10px;
@@ -578,7 +519,6 @@ span {
   color: #fff;
   position: relative;
 }
-
 .price-area .inner-area .text {
   font-size: 25px;
   font-weight: 400;
@@ -586,7 +526,6 @@ span {
   top: -10px;
   left: 17px;
 }
-
 .price-area .inner-area .price {
   font-size: 45px;
   font-weight: 500;
@@ -617,22 +556,18 @@ span {
   display: flex;
   justify-content: space-between;
 }
-
-.features li .list-name {
-  font-size: 17px;
-  font-weight: 400;
+.table .features li .icon.cross {
+  color: #cd3241;
 }
-
-.features li .icon {
-  font-size: 15px;
-}
-
-.features li .icon.check {
+.table .features li .icon.check {
   color: #2db94d;
 }
-
-.features li .icon.cross {
-  color: #cd3241;
+.table .features li .icon {
+  font-size: 15px;
+}
+.table .features li .list-name {
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .table .btn {
@@ -641,7 +576,9 @@ span {
   margin-top: 35px;
   justify-content: center;
 }
-
+.table .btn a {
+  text-decoration: none;
+}
 .table .btn button {
   width: 80%;
   height: 50px;
@@ -654,13 +591,8 @@ span {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .table .btn button:hover {
   border-radius: 5px;
-}
-
-.table .btn a {
-  text-decoration: none;
 }
 
 .basic .features li::selection {
@@ -678,7 +610,6 @@ span {
   background: #fff;
   color: #ffd861;
 }
-
 .basic .btn button:hover {
   background: #ffd861;
   color: #fff;
@@ -701,23 +632,21 @@ span {
   background: #43ef8b;
 }
 
+.ultimate .btn a {
+  text-decoration: none;
+}
 .ultimate .btn button {
   border: 2px solid #43ef8b;
   color: #43ef8b;
   background: #fff;
 }
-
-.ultimate .btn a {
-  text-decoration: none;
+.ultimate .btn button:hover {
+  background: #43ef8b;
+  color: #fff;
 }
 
 .premium .btn a {
   text-decoration: none;
-}
-
-.ultimate .btn button:hover {
-  background: #43ef8b;
-  color: #fff;
 }
 
 .basic .package-name {
@@ -804,19 +733,6 @@ span {
   font-size: 17px;
   text-transform: uppercase;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-}
-
-.cajas {
-  display: flex;
-  margin: 5px 8px;
-}
-
-.cajas label {
-  flex-basis: 80px;
-}
-
-.cajas input {
-  flex: 1;
 }
 
 .pie-pagina {
