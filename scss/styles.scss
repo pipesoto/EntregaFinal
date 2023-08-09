@@ -7,6 +7,11 @@
     box-sizing: border-box;
     
 }
+.banner{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 70px;
+}
 .intro-tarjetas{
     padding: 30px;
     h2 strong{
@@ -88,9 +93,9 @@
     margin: 10px;
     gap: 10px;
     grid-template-areas: "img1 img1  img2    img2"
-        "img3 img10 img10   img4"
-        "img8 img10 img10   img4"
-        "img8 img6  img6    img9";
+                         "img3 img10 img10   img4"
+                         "img8 img10 img10   img4"
+                         "img8 img6  img6    img9";
         .img1 {
             grid-area: img1;
             object-fit: cover;
@@ -189,6 +194,7 @@
     margin: auto;
     justify-items: center;
     align-items: center;
+    padding-bottom: 20px;
 }
 .card{
     height: 250px;
@@ -358,11 +364,16 @@ background: linear-gradient(90deg,#7579ff,#b224ef);
     cursor: pointer;
     width: 100%;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+}
 span{
     margin-right: 10px;
     font-size: 20px;
 }
-}
+
 @media screen and (max-width:964px) {
     .teams{
         grid-template-columns: 1fr;
