@@ -13,9 +13,11 @@
 .banner {
     padding: 0px;
     margin: 0px;
-    padding-top: 70px;
+    padding-top: 45px;
 }
-
+.carousel-item img{
+    width: 100%;
+}
 //estilos tarjetas 
 .intro-tarjetas {
     padding: 30px;
@@ -710,6 +712,8 @@ span {
 .pie-pagina {
     background-color: black;
     width: 100%;
+    padding: 0;
+    margin: 0;
 
 }
 .pie-pagina .grupo1 {
