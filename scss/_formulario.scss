@@ -1,9 +1,10 @@
 .inicio-contacto {
     margin-top: 70px;
     padding: 10px;
+    margin-left: 10px;
 }
 .cuerpo-contacto {
-    background: #181818;
+    background: #fff;
     color: #fff;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
@@ -36,6 +37,9 @@
 }
 .contact-form {
     background: #222222;
+    h3{ 
+        text-align: center;
+    }
 
     form {
         display: grid;
@@ -47,9 +51,9 @@
             margin: 0;
             padding: 1em;
             button {
-                background: #124e97;
+                background: #124481;
                 border: 0;
-                text-transform: uppercase;
+                border-radius: 15px;
                 padding: 1em;
             }
         }
@@ -62,23 +66,23 @@
 .contact-form form input,
 .contact-form form textarea {
     width: 100%;
-    padding: .7em;
+    padding: .7em;  
     border: none;
     background: none;
     outline: 0;
     color: #fff;
-    border-bottom: 1px solid #124e97;
+    border-bottom: 1px solid #d5e1f0;
 }
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: #55e993;
+    background: #b1a07a;
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
 }
 /* CONTACT INFO */
 .contact-info {
-    background: #000;
+    background: gray;
     h4 {
         text-align: center;
         margin: 0 0 1rem 0;

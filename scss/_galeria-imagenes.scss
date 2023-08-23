@@ -34,42 +34,13 @@
         "img3 img10 img10   img4"
         "img8 img10 img10   img4"
         "img8 img6  img6    img9";
-    .img1 {
-        grid-area: img1;
-        object-fit: cover;
-    }
-    .img2 {
-        grid-area: img2;
-        object-fit: cover;
-    }
-    .img3 {
-        grid-area: img3;
-        object-fit: cover;
-    }
-    .img4 {
-        grid-area: img4;
-
-    }
-    .img5 {
-        grid-area: img5;
-        object-fit: cover;
-    }
-    .img6 {
-        grid-area: img6;
-        object-fit: cover;
-    }
-    .img7 {
-        grid-area: img7;
-        object-fit: cover;
-    }
-    .img8 {
-        grid-area: img8;
-        object-fit: cover;
-    }
-    .img9 {
-        grid-area: img9;
-        object-fit: cover;
-    }
+        @for $i from 1 to 10{
+            .img#{$i}{
+                grid-area: img#{$i};
+                object-fit: cover;
+            }
+        }
+   
     .img10 {
         grid-area: img10;
         background-color: aliceblue;

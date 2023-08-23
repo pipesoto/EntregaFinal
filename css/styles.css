@@ -80,7 +80,7 @@
   }
 }
 .pie-pagina {
-  background-color: black;
+  background-color: #007bff;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -111,7 +111,7 @@
   color: white;
 }
 .pie-pagina .grupo1 .redes-sociales .logo-linkedin:hover {
-  color: rgb(23, 137, 230);
+  color: #000;
 }
 .pie-pagina .grupo1 .redes-sociales .logo-whatsapp {
   color: white;
@@ -197,6 +197,7 @@
 }
 .grid-padre .img4 {
   grid-area: img4;
+  object-fit: cover;
 }
 .grid-padre .img5 {
   grid-area: img5;
@@ -240,6 +241,14 @@
   padding-top: 20px;
 }
 
+.quienes-somos {
+  margin-left: 10px;
+}
+.quienes-somos p {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
 .teams {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -262,7 +271,7 @@
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   text-align: center;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #939aa5, #4158d0);
 }
 .card:hover {
   height: 500px;
@@ -394,7 +403,7 @@
   color: white;
 }
 .card-contenido .info-personal:nth-child(1) {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   padding: 10px;
   line-height: 25px;
@@ -421,11 +430,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #7579ff, #b224ef);
+  background: #124481;
 }
 .botones:hover {
   cursor: pointer;
   width: 100%;
+  background: #124481;
 }
 .botones a {
   text-decoration: none;
@@ -454,12 +464,15 @@ span {
 }
 .servicios h1 {
   padding: 10px;
+  margin-left: 10px;
 }
-.servicios .servicios h4 {
+.servicios h4 {
   padding: 10px;
+  margin-left: 10px;
 }
-.servicios .servicios p {
-  padding: 10px;
+.servicios p {
+  padding: 5px;
+  margin-left: 10px;
 }
 
 .cuerpo {
@@ -510,7 +523,7 @@ span {
 
 .tarjetero-servicios .back {
   transform: perspective(600px) rotateY(180deg);
-  background: rgb(3, 35, 54);
+  background: rgb(88, 136, 161);
   padding: 15px;
   color: #f3f3f3;
   display: flex;
@@ -551,6 +564,7 @@ span {
 .planes {
   margin-top: 70px;
   padding: 10px;
+  margin-left: 10px;
 }
 
 .tarjeta-planes h2 {
@@ -656,11 +670,12 @@ span {
 }
 .table .btn a {
   text-decoration: none;
+  color: #fff;
 }
 .table .btn button {
   width: 80%;
   height: 50px;
-  color: #fff;
+  color: #124481;
   font-size: 20px;
   font-weight: 500;
   border: none;
@@ -674,7 +689,7 @@ span {
 }
 
 .basic .features li::selection {
-  background: #ffd861;
+  background: #124481;
 }
 
 .basic ::selection,
@@ -684,12 +699,12 @@ span {
 }
 
 .basic .btn button {
-  border: 2px solid #ffd861;
-  background: #fff;
-  color: #ffd861;
+  border: 2px solid #124481;
+  background: #124481;
+  color: #fff;
 }
 .basic .btn button:hover {
-  background: #ffd861;
+  background: #124481;
   color: #fff;
 }
 
@@ -697,29 +712,29 @@ span {
 .premium .price-area,
 .premium .inner-area,
 .premium .btn button {
-  background: #a26bfa;
+  background: #124481;
 }
 
 .premium .btn button:hover {
-  background: #833af8;
+  background: #124481;
 }
 
 .ultimate ::selection,
 .ultimate .price-area,
 .ultimate .inner-area {
-  background: #43ef8b;
+  background: #124481;
 }
 
 .ultimate .btn a {
   text-decoration: none;
 }
 .ultimate .btn button {
-  border: 2px solid #43ef8b;
-  color: #43ef8b;
-  background: #fff;
+  border: 2px solid #124481;
+  color: #fff;
+  background: #124481;
 }
 .ultimate .btn button:hover {
-  background: #43ef8b;
+  background: #124481;
   color: #fff;
 }
 
@@ -728,15 +743,15 @@ span {
 }
 
 .basic .package-name {
-  background: #ffecb3;
+  background: #124481;
 }
 
 .premium .package-name {
-  background: #d0b3ff;
+  background: #124481;
 }
 
 .ultimate .package-name {
-  background: #baf8d4;
+  background: #124481;
 }
 
 .basic .package-name::before {
@@ -837,10 +852,11 @@ span {
 .inicio-contacto {
   margin-top: 70px;
   padding: 10px;
+  margin-left: 10px;
 }
 
 .cuerpo-contacto {
-  background: #181818;
+  background: #fff;
   color: #fff;
   line-height: 1.6;
   font-family: "Quicksand", sans-serif;
@@ -877,6 +893,9 @@ span {
 .contact-form {
   background: #222222;
 }
+.contact-form h3 {
+  text-align: center;
+}
 .contact-form form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -889,9 +908,9 @@ span {
   padding: 1em;
 }
 .contact-form form p button {
-  background: #124e97;
+  background: #124481;
   border: 0;
-  text-transform: uppercase;
+  border-radius: 15px;
   padding: 1em;
 }
 .contact-form form .block {
@@ -907,12 +926,12 @@ span {
   background: none;
   outline: 0;
   color: #fff;
-  border-bottom: 1px solid #124e97;
+  border-bottom: 1px solid #d5e1f0;
 }
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #55e993;
+  background: #b1a07a;
   color: #fff;
   transition: background-color 1s ease-out;
   outline: 0;
@@ -920,7 +939,7 @@ span {
 
 /* CONTACT INFO */
 .contact-info {
-  background: #000;
+  background: gray;
 }
 .contact-info h4 {
   text-align: center;

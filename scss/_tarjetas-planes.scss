@@ -2,6 +2,7 @@
 .planes {
     margin-top: 70px;
     padding: 10px;
+    margin-left: 10px;
 }
 .tarjeta-planes {
     h2 {
@@ -99,11 +100,12 @@
     justify-content: center;
     a {
         text-decoration: none;
+        color: #fff;
     }
     button {
         width: 80%;
         height: 50px;
-        color: #fff;
+        color: $background-color_botton;
         font-size: 20px;
         font-weight: 500;
         border: none;
@@ -118,7 +120,7 @@
 }
 
 .basic .features li::selection {
-    background: #ffd861;
+    background: $background-color_botton;
 }
 .basic ::selection,
 .basic .price-area,
@@ -126,11 +128,11 @@
     background: #ffd861;
 }
 .basic .btn button {
-    border: 2px solid #ffd861;
-    background: #fff;
-    color: #ffd861;
+    border: 2px solid $background-color_botton;
+    background: $background-color_botton;
+    color: #fff;
     &:hover {
-        background: #ffd861;
+        background: $background-color_botton;
         color: #fff;
     }
 }
@@ -138,26 +140,26 @@
 .premium .price-area,
 .premium .inner-area,
 .premium .btn button {
-    background: #a26bfa;
+    background: $background-color_botton;
 }
 .premium .btn button:hover {
-    background: #833af8;
+    background: $background-color_botton;
 }
 .ultimate ::selection,
 .ultimate .price-area,
 .ultimate .inner-area {
-    background: #43ef8b;
+    background: $background-color_botton;
 }
 .ultimate .btn {
     a {
         text-decoration: none;
     }
     button {
-        border: 2px solid #43ef8b;
-        color: #43ef8b;
-        background: #fff;
+        border: 2px solid #124481;
+        color: #fff;
+        background: #124481;
         &:hover {
-            background: #43ef8b;
+            background: #124481;
             color: #fff;
         }
     }
@@ -166,13 +168,13 @@
     text-decoration: none;
 }
 .basic .package-name {
-    background: #ffecb3;
+    background: #124481;
 }
 .premium .package-name {
-    background: #d0b3ff;
+    background:#124481;
 }
 .ultimate .package-name {
-    background: #baf8d4;
+    background: #124481;
 }
 .basic .package-name::before {
     content: "Básico";

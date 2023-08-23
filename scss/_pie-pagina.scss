@@ -1,5 +1,5 @@
 .pie-pagina {
-    background-color: black;
+    background-color:#007bff;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -18,22 +18,13 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        .logo-facebook {
-            color: white;
-            &:hover {
-                color: blue;
-            }
-        }
-        .logo-linkedin {
-            color: white;
-            &:hover {
-                color: rgb(23, 137, 230);
-            }
-        }
-        .logo-whatsapp {
-            color: white;
-            &:hover {
-                color: green;
+        @each $clave,$valor in $colores-redes-sociales{
+            .#{$clave}{
+                color:white;
+                &:hover{
+                    color:$valor;
+
+                }
             }
         }
     }
