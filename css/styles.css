@@ -7,6 +7,23 @@
   box-sizing: border-box;
 }
 
+.botones, .contact-form form p button, .table .btn button {
+  width: 200px;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  padding: 0px 15px;
+  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #124481;
+}
+
 .banner {
   padding: 0px;
   margin: 0px;
@@ -418,7 +435,7 @@
   margin-top: 10px;
 }
 
-.botones {
+.botones, .contact-form form p button, .table .btn button {
   color: white;
   border: none;
   border-radius: 30px;
@@ -432,12 +449,12 @@
   justify-content: center;
   background: #124481;
 }
-.botones:hover {
+.botones:hover, .contact-form form p button:hover, .table .btn button:hover {
   cursor: pointer;
   width: 100%;
   background: #124481;
 }
-.botones a {
+.botones a, .contact-form form p button a, .table .btn button a {
   text-decoration: none;
   color: white;
 }
@@ -672,22 +689,6 @@ span {
   text-decoration: none;
   color: #fff;
 }
-.table .btn button {
-  width: 80%;
-  height: 50px;
-  color: #124481;
-  font-size: 20px;
-  font-weight: 500;
-  border: none;
-  outline: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.table .btn button:hover {
-  border-radius: 5px;
-}
-
 .basic .features li::selection {
   background: #124481;
 }
@@ -905,13 +906,7 @@ span {
 }
 .contact-form form p {
   margin: 0;
-  padding: 1em;
-}
-.contact-form form p button {
-  background: #124481;
-  border: 0;
-  border-radius: 15px;
-  padding: 1em;
+  padding: 0.5em;
 }
 .contact-form form .block {
   grid-column: 1/3;
