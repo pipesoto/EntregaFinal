@@ -107,14 +107,7 @@
     }
 }
 
-.basic .features li::selection {
-    background: $background-color_botton;
-}
-.basic ::selection,
-.basic .price-area,
-.basic .inner-area {
-    background: #ffd861;
-}
+
 .basic .btn button {
     border: 2px solid $background-color_botton;
     background: $background-color_botton;
